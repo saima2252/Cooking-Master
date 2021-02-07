@@ -1,0 +1,77 @@
+body{
+    background-color: cornsilk;
+}
+.search-box {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.search-box button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 120px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: darkblue;
+    color: white;
+    margin-left: -5px;
+}
+
+
+div#food-menu-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    width: 90%;
+    padding: 0px 15px;
+    margin: 50px  auto;
+
+}
+
+.food-box-design {
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.food-box-design img {
+    width: 100%;
+}
+
+.food-box-design button {
+    margin-bottom: 10px;
+}
+.food-details-design {
+    overflow: hidden;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 22px;
+    margin: auto;
+}
+
+.food-details-design img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div#show-menu-details {
+    margin: 50px 0px;
+}
+
+#wrong-info{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    
+}
