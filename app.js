@@ -6,6 +6,9 @@ function getFoodApi() {
     .then(data => showFoodList(data))
     .catch(error => {
         document.getElementById('wrong-info').innerText = 'Item not found';
+        document.getElementById('wrong-info').style.display = "block";
+        document.getElementById('food-menu-container').style.display = "none";
+        document.getElementById('show-menu-details').style.display = "none";
         
     })
 
@@ -28,6 +31,8 @@ function showFoodList(foodMenu){
         foodBox.appendChild(singleFoodBox);
         
     }
+    document.getElementById('wrong-info').style.display = "none";
+    document.getElementById('food-menu-container').style.display = "block";
 
 }
 
@@ -63,6 +68,7 @@ function showMenuDetail(foodDetails){
         
         
     }
-    console.log(foodDetails);
+    document.getElementById('show-menu-details').style.display = "block";
+
 }
 
